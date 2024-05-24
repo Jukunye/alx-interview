@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 
 const args = process.argv;
-const movieUrlBase = "https://swapi-api.hbtn.io/api/films/";
+const movieUrlBase = 'https://swapi-api.hbtn.io/api/films/';
 // Define URL for movie API endpoint using command-line argument
 const movieUrl = `${movieUrlBase}${args[2]}/`;
 
@@ -34,7 +34,7 @@ function getCharacterDetails() {
         characterIndex++;
         getCharacterDetails();
       } else {
-        console.error("error:", error);
+        console.error('error:', error);
       }
     });
   }
