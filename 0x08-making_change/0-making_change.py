@@ -11,8 +11,9 @@ def makeChange(coins, total):
         total (int): The target amount to make with the coins.
 
     Returns:
-        int: The minimum number of coins needed to make the total. 
-             Returns -1 if the total cannot be made with the given coin denominations.
+        int: The minimum number of coins needed to make the total.
+             Returns -1 if the total cannot be made
+                with the given coin denominations.
     """
 
     if total <= 0:
