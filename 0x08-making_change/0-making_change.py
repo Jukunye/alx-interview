@@ -1,6 +1,19 @@
 #!/usr/bin/python3
+""" This module contains the function makeChanges """
+
 
 def makeChange(coins, total):
+    """
+    Determine the minimum number of coins needed to make the given total.
+
+    Args:
+        coins (list of int): A list of coin denominations available.
+        total (int): The target amount to make with the coins.
+
+    Returns:
+        int: The minimum number of coins needed to make the total. 
+             Returns -1 if the total cannot be made with the given coin denominations.
+    """
 
     if total <= 0:
         return 0
