@@ -51,10 +51,10 @@ def isWinner(x, nums):
     ben_wins = 0
 
     for num in nums:
-        if moves[num] % 2 == 1:  # If the number of moves is odd, Maria wins
-            maria_wins += 1
-        else:
+        if moves[num] % 2 == 0:  # If the number of moves is odd, Maria wins
             ben_wins += 1
+        else:
+            maria_wins += 1
 
     if maria_wins > ben_wins:
         return "Maria"
