@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" This module contains the functions Play_game and isWinner"""
+
+
 def play_game(n):
     """
     Use the Sieve of Eratosthenes to find all primes up to n
